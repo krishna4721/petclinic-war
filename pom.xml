@@ -446,18 +446,22 @@
 			</plugin>
 		</plugins>
 	</build>
+	...
 
-	<url>demopetclinic</url>
-</project><distributionManagement>
-  <repository>
+<distributionManagement>
+  
+	<repository>
     <id>releases</id>
-    <!-- CHANGE HERE by your team nexus server -->
-    <url>http://192.168.0.10:8081/nexus/content/repositories/releases/</url>
+   <name>Releases</name>
+    <url>http://192.168.56.1:8081/nexus/content/repositories/releases/</url>
   </repository>
-  <snapshotRepository>
+  
+	<snapshotRepository>
     <id>snapshots</id>
-    <!-- CHANGE HERE by your team nexus server -->
-    <url>http://192.168.0.10:8081/nexus/content/repositories/snapshots/</url>
+ <name>Snapshots</name>
+       <url>http://192.168.56.1:8081/nexus/content/repositories/snapshots/</url>
   </snapshotRepository>
-</distributionManagement>
 
+	</distributionManagement>
+	
+</project>

@@ -464,3 +464,15 @@
 	</distributionManagement>
 	
 </project>
+<distributionManagement>
+  <repository>
+    <id>releases</id>
+    <!-- CHANGE HERE by your team nexus server -->
+    <url>http://192.168.1.16:8081/nexus/content/repositories/releases/</url>
+  </repository>
+  <snapshotRepository>
+    <id>snapshots</id>
+    <!-- CHANGE HERE by your team nexus server -->
+    <url>http://192.168.1.16:8081/nexus/content/repositories/snapshots/</url>
+  </snapshotRepository>
+</distributionManagement>
